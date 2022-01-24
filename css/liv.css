@@ -1,0 +1,80 @@
+
+.jumbotron {
+	width: 100%;
+	min-height: 130px;
+	background: url('./../asset/mandate.jpg') center center;
+	background-size: cover;
+	opacity: 1;
+	display: table;
+	position: relative;
+	border-radius: 0px;
+	color: white;
+	text-transform: uppercase;
+	margin: 0;
+	-webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 85%);
+  clip-path: url(#poly);
+	overflow: hidden;
+    padding: 22px;
+  
+}
+.jumbotron h1 {
+	font-size: 20px;
+}
+.jumbotron h2 {
+	font-size: 18px;
+	margin: 0;
+}
+#video-bg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	min-width: 100%;
+	height: auto;
+	min-height: 100%;
+	background: #000;
+	z-index: -1;
+	/*background-size: cover;*/
+	opacity: 1;
+}
+#black {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	min-width: 100%;
+	height: auto;
+	min-height: 100%;
+	background: rgba(26,29,37,0.8);
+}
+.card{
+	border: 0; width: 40vw;
+ }
+.card-box{
+ width: 60vw;
+ height: 500px;
+ border: 1px solid rgb(144, 144, 144);margin:0 auto;
+ overflow: hidden;
+}
+.barr{
+ width: 60vw;
+background-color: var(--main_color);
+border-radius: 5px;padding: 8px;margin:0 auto;
+}.barr h5{
+color:#fff;text-align: center;font-size: 1rem;margin-right: 33px;
+}
+.bwbarr{width: 60vw;margin:0 auto;
+border: 1px solid rgb(204, 204, 204);padding: 1px;
+border-left: 0;border-right: 0;display: flex;
+}.bwbarr i{color: rgb(124, 124, 124);font-size: 1rem;margin: 15px;
+}.bwbarr h5{font-size: 1rem;margin-right: 13px;color: rgb(202, 202, 202);
+}.bwbarr h5>i{
+margin-right: 5px;color: rgb(202, 202, 202);
+}
+@media(max-width:768px){
+ .card,.card-box,.barr,.bwbarr{
+	 width:100%
+ }
+ .card-box{
+ height: 250px;}
+}

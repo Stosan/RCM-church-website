@@ -1,0 +1,209 @@
+
+.carrier{
+  background-color: rgb(241, 241, 241);
+}
+
+.jumbotron {
+	width: 100%;
+	min-height: 130px;
+	background: url('./../asset/mandate.jpg') center center;
+	background-size: cover;
+	opacity: 1;
+	display: table;
+	position: relative;
+	border-radius: 0px;
+	color: white;
+	text-transform: uppercase;
+	margin: 0;
+	-webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 85%);
+  clip-path: url(#poly);
+	overflow: hidden;
+    padding: 22px;
+  
+}
+.jumbotron h1 {
+	font-size: 20px;
+}
+.jumbotron h2 {
+	font-size: 18px;
+	margin: 0;
+}
+#video-bg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	min-width: 100%;
+	height: auto;
+	min-height: 100%;
+	background: #000;
+	z-index: -1;
+	/*background-size: cover;*/
+	opacity: 1;
+}
+#black {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	min-width: 100%;
+	height: auto;
+	min-height: 100%;
+	background: rgba(26,29,37,0.8);
+}
+
+.artlc-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 2;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.artlc-card a {
+  color: inherit;
+}
+.artlc-card a:hover {
+  color: #000000;
+  background-color: var(--secondary-color);
+}
+.artlc-card:hover .photo {
+  transform: scale(1.3) rotate(3deg);
+}
+.artlc-card .meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+.artlc-card .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+}
+.artlc-card .details,
+.artlc-card .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.artlc-card .details {
+  display: flex;
+  position: absolute;
+  top: 33px;left:45%;
+  margin: auto;
+  transition: left 0.2s;
+  color: rgb(117, 117, 117);
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.artlc-card .details a {
+  -webkit-text-decoration: dotted underline;
+          text-decoration: dotted underline;
+}
+.artlc-card .details ul li {
+  display: inline-block;
+}
+
+.artlc-card .details .tags li {
+  margin-right: 2px;
+}
+
+.artlc-card .details .tags li:first-child {
+  margin-left: -4px;
+}
+.artlc-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.artlc-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+.artlc-card .description h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+.artlc-card .description .read-more {
+  text-align: left;
+}
+.artlc-card .description .read-more a {
+  color: rgb(255, 255, 255);background-color: var(--main_color);
+  display: inline-block;font-size: 0.7rem;
+  position: relative;padding: 5px;border-radius: 5px;
+}
+
+.artlc-card .description .read-more a:hover {
+  background-color: var(--secondary-color);
+  color:#000;text-decoration: none;
+  padding: 5px;
+}
+.artlc-card p {
+  position: relative;
+  margin: 1rem 0 0;max-width:400px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+.artlc-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .artlc-card {
+    flex-direction: row;
+    max-width: 700px;
+  }
+  .artlc-card .meta {
+    flex-basis: 40%;
+    height: auto;
+  }
+  .artlc-card .description {
+    flex-basis: 60%;
+  }
+
+  .artlc-card.alt {
+    flex-direction: row-reverse;
+  }
+ 
+  .artlc-card.alt .details {
+    padding-left: 25px;
+  }
+}
+.artl-recent-wrapper{
+  background-color: #fff;max-height: 60%;overflow: hidden;margin-top: 15px;border-radius: 5px;
+}
+.artl-recent-wrapper h5{
+  font-size: 1.2rem;margin: 0.6rem ;text-align: center;
+}
+.artl-recent-wrapper ul{
+ list-style: none;padding: 1rem;
+}
+.artl-recent-wrapper li{
+  border-bottom: 1px solid rgb(202, 202, 202); max-width:100%;
+  overflow:hidden;
+  white-space:nowrap;margin-bottom: 15px;padding-bottom: 10px;
+}
+.artl-recent-wrapper li a{
+  font-size: 0.8rem;
+  color: #000;text-decoration: none;height: 10px;
+ 
+}
